@@ -1,0 +1,25 @@
+{
+  "name": "algorithm-problem",
+  "version": "1.0.0",
+  "description": "algorithm problems on leedcode or other",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eddie-Fannie/Algorithm-problem.git"
+  },
+  "author": "eddie-fannie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eddie-Fannie/Algorithm-problem/issues"
+  },
+  "homepage": "https://github.com/Eddie-Fannie/Algorithm-problem#readme",
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "vuepress": "^1.4.0"
+  }
+}
