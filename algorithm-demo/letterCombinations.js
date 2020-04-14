@@ -12,6 +12,14 @@ var letterCombinations = function(digits) {
             codeArray.push(wordArray[item])
         }
     })
+    // 还需要加一个判断, 如果只输入一个数字, 如 "2" 的时候, 只进行一次循环.
+  if(codeArray.length === 1) {
+    var temp = []
+    for(let i = 0; i < code[0].length; i ++) {
+      temp.push(codeArray[0][i])
+    }
+    return temp
+  }
     let comb = arr => {
         let resultArray = []
         for(let i = 0,lh=codeArray[0].length;i<lh;i++) {
