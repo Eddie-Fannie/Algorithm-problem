@@ -1,0 +1,27 @@
+/**
+ * @param {number[]} deck
+ * @return {boolean}
+ */
+var hasGroupsSizeX = function(deck) {
+    //最大公约数计算公式
+    function gcd(a,b) {
+        if(a%b === 0) return b;
+        return gcd(b,a%b)
+    }
+    //相同的牌出现的次数Map
+    let timeMap = new Map()
+    deck.forEach(item => {
+        timeMap.set(item,timeMap.has(item) ? timeMap.get(item) + 1 : 1);
+    });
+    let timeArr = [...timeMap.values()];
+
+    //默认数组首位对公约数计算无干扰
+    let g = timeArr[0]
+
+    //遍历出现次数，计算最大公约数
+    timeArr.forEach(time => {
+        g = gcd(g, time);
+    })
+    return g >=2;
+};
+hasGroupsSizeX([2,3,5,4,2,3,4])
