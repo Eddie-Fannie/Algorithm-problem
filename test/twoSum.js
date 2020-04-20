@@ -1,4 +1,4 @@
-let {twoSum1,twoSum2,twoSum3,twoSum4} = require('./algorithm-demo/twoSum');
+let {twoSum1,twoSum2,twoSum3,twoSum4} = require('./../algorithm-demo/twoSum');
 
 test('[2, 7, 11, 15] to 9', () =>{
     expect(twoSum1([2, 7, 11, 15],9)).toStrictEqual([0,1]);
