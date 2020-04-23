@@ -15,15 +15,12 @@ var grayCode = function(n) {
             result[i] = `0${prev[i]}`
             result[max-i] = `1${prev[i]}`
         }
-        let endResult = []
-        result.forEach(item => {
-            endResult.push(parseInt(item,2))
-        })
-        return endResult
+        return result
     }
+    return 
 };
 
-// 自己到解法
+// 自己的解法
 /**
  * @param {number} n
  * @return {number[]}
